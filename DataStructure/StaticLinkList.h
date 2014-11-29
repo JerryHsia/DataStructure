@@ -9,9 +9,6 @@
 #ifndef DataStructure_StaticLinkList_h
 #define DataStructure_StaticLinkList_h
 
-#define SUCCESS -1
-#define ERROR -2
-
 typedef struct StaticLinkListNode {
     int data;
     int cur; // 后继元素在数组中的索引

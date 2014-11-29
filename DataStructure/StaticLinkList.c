@@ -7,11 +7,12 @@
 //
 
 #define MAX_SIZE 7
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
+#include "Public.h"
 #include "StaticLinkList.h"
-/*
+
 int main(int argc, const char * argv[]) {
     
     StaticLinkList list;

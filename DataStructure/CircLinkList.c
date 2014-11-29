@@ -5,11 +5,12 @@
 //  Created by Jerry Hsia on 15/06/13.
 //  Copyright (c) 2013 Jerry Hsia. All rights reserved.
 //
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
+#include "Public.h"
 #include "CircLinkList.h"
-/*
+
 int main(int argc, const char * argv[]) {
     
     // 头插法

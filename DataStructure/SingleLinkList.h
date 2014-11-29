@@ -9,9 +9,6 @@
 #ifndef DataStructure_SingleLinkList_h
 #define DataStructure_SingleLinkList_h
 
-#define SUCCESS -1
-#define ERROR -2
-
 typedef struct SingleLinkListNode {
     int data;
     struct SingleLinkListNode* next;

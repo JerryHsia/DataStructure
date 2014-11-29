@@ -9,9 +9,6 @@
 #ifndef DataStructure_CircLinkList_h
 #define DataStructure_CircLinkList_h
 
-#define SUCCESS -1
-#define ERROR -2
-
 typedef struct CircLinkListNode {
     int data;
     struct CircLinkListNode* next;
