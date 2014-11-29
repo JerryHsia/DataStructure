@@ -45,6 +45,7 @@ int s_length(STACK* stack) {
 
 // 入栈
 int s_push(STACK* stack, int data) {
+    printf("--%d入栈\n", data);
     SNODE* node = (SNODE*)malloc(sizeof(SNODE));
     node->data = data;
     node->next = stack->top;
@@ -61,12 +62,14 @@ int s_pop(STACK* stack) {
     stack->top = node->next;
     stack->length--;
     free(node);
+    printf("--%d出栈\n", data);
     return data;
 }
 
 // 清空
 int s_clear(STACK* stack) {
     if (s_length(stack) == 0) return ERROR;
+    printf("--清空栈\n");
     while (stack->top) {
         SNODE* next = stack->top->next;
         free(stack->top);

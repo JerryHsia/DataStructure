@@ -1,8 +1,8 @@
 //
-//  CircLinkList.h
+//  DCircLinkList.h
 //  DataStructure
 //
-//  Created by Jerry Hsia on 05/11/14.
+//  Created by Jerry Hsia on 06/11/14.
 //  Copyright (c) 2013 Jerry Hsia. All rights reserved.
 //
 
@@ -11,7 +11,8 @@
 
 typedef struct CircLinkListNode {
     int data;
-    struct CircLinkListNode* next;
+    struct CircLinkListNode* pre;// 前指针
+    struct CircLinkListNode* next;// 后指针
 } CNODE;
 
 struct CircLinkList {
@@ -27,6 +28,7 @@ CLIST c_init() {
     CNODE* head = (CNODE*)malloc(sizeof(CNODE));
     head->data = 0;// 头结点数据域存储链表长度
     head->next = head;// 头结点指针指向头结点
+    head->pre = head;
     circLinkList->rear = head;// 尾指针指向头结点
     circLinkList->head = head;
     return circLinkList;
@@ -37,12 +39,17 @@ int c_length(CLIST list) {
     return list->head->data;
 }
 
+// 是否为逆向遍历，index过半后，从尾指针开始遍历
+int c_reverse(CLIST list, unsigned index) {
+    return index <= c_length(list)/2 ? 0 : 1;
+}
+
 // 打印链表
 void c_print(CLIST list) {
     printf("--打印链表，链表长度：%d\n", c_length(list));
     CNODE* node = list->head;
     while (node->next != list->head) {
-        printf("%d\n", node->next->data);
+        printf("pre: %d data: %d next: %d\n", node->next->pre->data, node->next->data, node->next->next->data);
         node = node->next;
     }
 }
@@ -55,22 +62,30 @@ int c_add(CLIST list, unsigned int index, int data) {
     }
     CNODE* newNode = (CNODE*)malloc(sizeof(CNODE));
     newNode->data = data;
-    int i;
-    CNODE* node;
-    if (index == c_length(list)) {// 在末尾插入，直接在尾节点后插入，时间复杂度O(1)
+    int i = 0;
+    int reverse = c_reverse(list, index);
+    CNODE* node;// 在node后插入
+    if (reverse) {// 在末尾插入，直接在尾节点后插入，时间复杂度O(1)
+        index = c_length(list) - index;
         node = list->rear;
-        i = c_length(list);
-        list->rear = newNode;// 尾指针指向新节点
     } else {
         node = list->head;
-        i = 0;
     }
     while (i < index) {
-        node = node->next;
+        if (reverse) {
+            node = node->pre;
+        } else {
+            node = node->next;
+        }
         i++;
     }
+    if (node == list->rear) {
+        list->rear = newNode;
+    }
     newNode->next = node->next;
+    node->next->pre = newNode;
     node->next = newNode;
+    newNode->pre = node;
     list->head->data++;
     return SUCCESS;
 }
@@ -81,17 +96,21 @@ int c_get(CLIST list, unsigned int index) {
     if (c_length(list) == 0 || index > c_length(list) - 1) {
         return ERROR;
     }
-    CNODE* node;
-    int i;
-    if (index == c_length(list) - 1) {// 充分利用尾指针的优势
+    CNODE* node;// node为获取的元素
+    int i = 0;
+    int reverse = c_reverse(list, index);
+    if (reverse) {// 充分利用尾指针的优势
+        index = c_length(list) - index;
         node = list->rear;
-        i = c_length(list) - 1;
     } else {
-        i = 0;
         node = list->head->next;
     }
     while (i < index) {
-        node = node->next;
+        if (reverse) {
+            node = node->pre;
+        } else {
+            node = node->next;
+        }
         i++;
     }
     return node->data;
@@ -104,24 +123,34 @@ int c_delete(CLIST list, unsigned int index) {
         return ERROR;
     }
     int i = 0;
-    CNODE* node = list->head;
+    CNODE* node;// node为被删除元素
+    int reverse = c_reverse(list, index);
+    if (reverse) {
+        index = c_length(list) - index;
+        node = list->rear;
+    } else {
+        node = list->head->next;
+    }
     while (i < index) {
-        node = node->next;
+        if (reverse) {
+            node = node->pre;
+        } else {
+            node = node->next;
+        }
         i++;
     }
-    CNODE* deleteNode = node->next;
-    if (deleteNode == list->rear) list->rear = node;// 尾节点被删除了，重新赋值尾指针
-    node->next = deleteNode->next;
-    int data = deleteNode->data;
-    free(deleteNode);
+    if (node == list->rear) list->rear = node->pre;// 尾节点被删除了，重新赋值尾指针
+    node->pre->next = node->next;
+    node->next->pre = node->pre;
+    int data = node->data;
+    free(node);
     list->head->data--;
     return data;
 }
 
 // 清空
-int c_clear(CLIST list) {
+void c_clear(CLIST list) {
     printf("--清空链表\n");
-    if (c_length(list) == 0) return ERROR;
     CNODE* node = list->head;
     while (node->next != list->head) {
         CNODE* nextNode = node->next->next;
@@ -130,6 +159,5 @@ int c_clear(CLIST list) {
     }
     list->rear = list->head;
     list->head->data = 0;
-    return SUCCESS;
 }
 #endif

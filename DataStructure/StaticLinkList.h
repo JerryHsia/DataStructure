@@ -2,12 +2,13 @@
 //  StaticLinkList.h
 //  DataStructure
 //
-//  Created by Jerry Hsia on 13/06/13.
+//  Created by Jerry Hsia on 04/11/14.
 //  Copyright (c) 2013 Jerry Hsia. All rights reserved.
 //
 
 #ifndef DataStructure_StaticLinkList_h
 #define DataStructure_StaticLinkList_h
+#define MAX_SIZE 7
 
 typedef struct StaticLinkListNode {
     int data;

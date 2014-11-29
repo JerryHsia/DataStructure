@@ -11,6 +11,7 @@
 		C43AF0B11A21AAC800B9F4E0 /* SingleLinkList.c in Sources */ = {isa = PBXBuildFile; fileRef = C43AF0B01A21AAC800B9F4E0 /* SingleLinkList.c */; };
 		C43AF0C21A220BD200B9F4E0 /* StaticLinkList.c in Sources */ = {isa = PBXBuildFile; fileRef = C43AF0C11A220BD200B9F4E0 /* StaticLinkList.c */; };
 		C4E462CC1A29787F001A68CD /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E462CA1A29787F001A68CD /* Stack.c */; };
+		C4E462D01A298278001A68CD /* DCircLinkList.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E462CE1A298278001A68CD /* DCircLinkList.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,8 @@
 		C4E462CA1A29787F001A68CD /* Stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Stack.c; sourceTree = "<group>"; };
 		C4E462CB1A29787F001A68CD /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		C4E462CD1A297CD2001A68CD /* Public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Public.h; sourceTree = "<group>"; };
+		C4E462CE1A298278001A68CD /* DCircLinkList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DCircLinkList.c; sourceTree = "<group>"; };
+		C4E462CF1A298278001A68CD /* DCircLinkList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCircLinkList.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,15 +71,17 @@
 		C43AF0AF1A21AAC800B9F4E0 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
-				C43AF0B01A21AAC800B9F4E0 /* SingleLinkList.c */,
+				C4E462CD1A297CD2001A68CD /* Public.h */,
 				C43AF0BB1A21C71A00B9F4E0 /* SingleLinkList.h */,
-				C43AF0C11A220BD200B9F4E0 /* StaticLinkList.c */,
+				C43AF0B01A21AAC800B9F4E0 /* SingleLinkList.c */,
 				C43AF0C31A220C0D00B9F4E0 /* StaticLinkList.h */,
+				C43AF0C11A220BD200B9F4E0 /* StaticLinkList.c */,
 				C4042FF91A24CE81000BFD15 /* CircLinkList.h */,
 				C4042FF81A24CE81000BFD15 /* CircLinkList.c */,
-				C4E462CA1A29787F001A68CD /* Stack.c */,
+				C4E462CF1A298278001A68CD /* DCircLinkList.h */,
+				C4E462CE1A298278001A68CD /* DCircLinkList.c */,
 				C4E462CB1A29787F001A68CD /* Stack.h */,
-				C4E462CD1A297CD2001A68CD /* Public.h */,
+				C4E462CA1A29787F001A68CD /* Stack.c */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 				C43AF0C21A220BD200B9F4E0 /* StaticLinkList.c in Sources */,
 				C43AF0B11A21AAC800B9F4E0 /* SingleLinkList.c in Sources */,
 				C4E462CC1A29787F001A68CD /* Stack.c in Sources */,
+				C4E462D01A298278001A68CD /* DCircLinkList.c in Sources */,
 				C401E50C1A260A9000CB5079 /* CircLinkList.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,11 +2,9 @@
 //  main.c
 //  DataStructure
 //
-//  Created by Jerry Hsia on 13/06/13.
+//  Created by Jerry Hsia on 04/11/14.
 //  Copyright (c) 2013 Jerry Hsia. All rights reserved.
 //
-
-#define MAX_SIZE 7
 /*
 #include <stdio.h>
 #include <stdlib.h>
