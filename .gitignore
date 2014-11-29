@@ -1,4 +1,3 @@
 # Ignore files build by xcode
 ######################
-project.xcworkspace/
-!project.pbxproj
+DataStructure.xcodeproj/project.xcworkspace/
