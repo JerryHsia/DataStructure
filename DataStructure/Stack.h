@@ -30,7 +30,7 @@ STACK* s_init() {
 // 打印栈
 int s_print(STACK* stack) {
     SNODE* node = stack->top;
-    printf("当前栈的长度：%d\n", stack->length);
+    printf("当前栈的长度：%d\n", s_length(stack));
     while (node) {
         printf("%d\n", node->data);
         node = node->next;

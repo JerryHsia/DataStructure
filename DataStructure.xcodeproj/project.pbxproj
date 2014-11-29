@@ -12,6 +12,7 @@
 		C43AF0C21A220BD200B9F4E0 /* StaticLinkList.c in Sources */ = {isa = PBXBuildFile; fileRef = C43AF0C11A220BD200B9F4E0 /* StaticLinkList.c */; };
 		C4E462CC1A29787F001A68CD /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E462CA1A29787F001A68CD /* Stack.c */; };
 		C4E462D01A298278001A68CD /* DCircLinkList.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E462CE1A298278001A68CD /* DCircLinkList.c */; };
+		C4E462D31A299F37001A68CD /* Queue.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E462D11A299F37001A68CD /* Queue.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,8 @@
 		C4E462CD1A297CD2001A68CD /* Public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Public.h; sourceTree = "<group>"; };
 		C4E462CE1A298278001A68CD /* DCircLinkList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DCircLinkList.c; sourceTree = "<group>"; };
 		C4E462CF1A298278001A68CD /* DCircLinkList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCircLinkList.h; sourceTree = "<group>"; };
+		C4E462D11A299F37001A68CD /* Queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Queue.c; sourceTree = "<group>"; };
+		C4E462D21A299F37001A68CD /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 				C4E462CE1A298278001A68CD /* DCircLinkList.c */,
 				C4E462CB1A29787F001A68CD /* Stack.h */,
 				C4E462CA1A29787F001A68CD /* Stack.c */,
+				C4E462D21A299F37001A68CD /* Queue.h */,
+				C4E462D11A299F37001A68CD /* Queue.c */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 				C43AF0C21A220BD200B9F4E0 /* StaticLinkList.c in Sources */,
 				C43AF0B11A21AAC800B9F4E0 /* SingleLinkList.c in Sources */,
 				C4E462CC1A29787F001A68CD /* Stack.c in Sources */,
+				C4E462D31A299F37001A68CD /* Queue.c in Sources */,
 				C4E462D01A298278001A68CD /* DCircLinkList.c in Sources */,
 				C401E50C1A260A9000CB5079 /* CircLinkList.c in Sources */,
 			);

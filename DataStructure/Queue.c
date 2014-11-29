@@ -1,30 +1,30 @@
 //
-//  Stack.c
+//  Queue.c
 //  DataStructure
 //
-//  Created by Jerry Hsia on 11/10/14.
+//  Created by Jerry Hsia on 11/13/14.
 //  Copyright (c) 2014 Jerry Hsia. All rights reserved.
 //
-/*
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "Public.h"
-#include "Stack.h"
+#include "Queue.h"
 
 int main(int argc, const char * argv[]) {
+    QUEUE* queue = q_init();
     
-    STACK* stack = s_init();
     for (int i = 0; i < 5; i++) {
-        s_push(stack, i);
+        q_enter(queue, i);
     }
-    s_print(stack);
+    q_print(queue);
     
-    s_pop(stack);
-    s_print(stack);
+    q_quit(queue);
+    q_quit(queue);
+    q_print(queue);
     
-    s_clear(stack);
-    s_print(stack);
+    q_clear(queue);
+    q_print(queue);
     
     return 0;
 }
-*/
