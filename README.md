@@ -11,3 +11,4 @@ DataStructure
 - DCircLinkList   双向循环链表
 - Stack 栈
 - Queue 队列
+- BinTree 二叉树

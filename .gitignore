@@ -2,3 +2,4 @@
 ######################
 DataStructure.xcodeproj/project.xcworkspace/
 DataStructure.xcodeproj/xcuserdata
+*.out

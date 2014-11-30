@@ -5,7 +5,7 @@
 //  Created by Jerry Hsia on 11/13/14.
 //  Copyright (c) 2014 Jerry Hsia. All rights reserved.
 //
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 #include "Public.h"
@@ -28,3 +28,4 @@ int main(int argc, const char * argv[]) {
     
     return 0;
 }
+*/
