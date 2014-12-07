@@ -13,3 +13,5 @@ DataStructure
 - Queue 队列
 - KMP KMP算法
 - BinTree 二叉树
+- HuffCode 哈夫曼树及哈夫曼编码
+- Sort 各种排序

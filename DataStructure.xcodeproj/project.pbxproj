@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C401E50C1A260A9000CB5079 /* CircLinkList.c in Sources */ = {isa = PBXBuildFile; fileRef = C4042FF81A24CE81000BFD15 /* CircLinkList.c */; };
+		C40328F01A3407BD008C28A5 /* Sort.c in Sources */ = {isa = PBXBuildFile; fileRef = C40328EF1A3407BD008C28A5 /* Sort.c */; };
 		C43AF0B11A21AAC800B9F4E0 /* SingleLinkList.c in Sources */ = {isa = PBXBuildFile; fileRef = C43AF0B01A21AAC800B9F4E0 /* SingleLinkList.c */; };
 		C43AF0C21A220BD200B9F4E0 /* StaticLinkList.c in Sources */ = {isa = PBXBuildFile; fileRef = C43AF0C11A220BD200B9F4E0 /* StaticLinkList.c */; };
 		C4E462CC1A29787F001A68CD /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E462CA1A29787F001A68CD /* Stack.c */; };
@@ -15,6 +16,7 @@
 		C4E462D31A299F37001A68CD /* Queue.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E462D11A299F37001A68CD /* Queue.c */; };
 		C4E462D61A2A2EB3001A68CD /* BiTree.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E462D41A2A2EB3001A68CD /* BiTree.c */; };
 		C4F3C8F11A32A9C900641D49 /* KMP.c in Sources */ = {isa = PBXBuildFile; fileRef = C4F3C8EF1A32A9C900641D49 /* KMP.c */; };
+		C4F3C8F41A32F83900641D49 /* HuffCode.c in Sources */ = {isa = PBXBuildFile; fileRef = C4F3C8F21A32F83900641D49 /* HuffCode.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C40328EE1A340419008C28A5 /* Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sort.h; sourceTree = "<group>"; };
+		C40328EF1A3407BD008C28A5 /* Sort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Sort.c; sourceTree = "<group>"; };
 		C4042FF81A24CE81000BFD15 /* CircLinkList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CircLinkList.c; sourceTree = "<group>"; };
 		C4042FF91A24CE81000BFD15 /* CircLinkList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircLinkList.h; sourceTree = "<group>"; };
 		C43AF0AD1A21AAC800B9F4E0 /* DataStructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructure; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +52,8 @@
 		C4E462D51A2A2EB3001A68CD /* BiTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiTree.h; sourceTree = "<group>"; };
 		C4F3C8EF1A32A9C900641D49 /* KMP.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KMP.c; sourceTree = "<group>"; };
 		C4F3C8F01A32A9C900641D49 /* KMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMP.h; sourceTree = "<group>"; };
+		C4F3C8F21A32F83900641D49 /* HuffCode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HuffCode.c; sourceTree = "<group>"; };
+		C4F3C8F31A32F83900641D49 /* HuffCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HuffCode.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,10 @@
 				C4E462D51A2A2EB3001A68CD /* BiTree.h */,
 				C4F3C8EF1A32A9C900641D49 /* KMP.c */,
 				C4F3C8F01A32A9C900641D49 /* KMP.h */,
+				C4F3C8F21A32F83900641D49 /* HuffCode.c */,
+				C4F3C8F31A32F83900641D49 /* HuffCode.h */,
+				C40328EE1A340419008C28A5 /* Sort.h */,
+				C40328EF1A3407BD008C28A5 /* Sort.c */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -158,6 +168,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C43AF0C21A220BD200B9F4E0 /* StaticLinkList.c in Sources */,
+				C40328F01A3407BD008C28A5 /* Sort.c in Sources */,
+				C4F3C8F41A32F83900641D49 /* HuffCode.c in Sources */,
 				C43AF0B11A21AAC800B9F4E0 /* SingleLinkList.c in Sources */,
 				C4E462CC1A29787F001A68CD /* Stack.c in Sources */,
 				C4E462D61A2A2EB3001A68CD /* BiTree.c in Sources */,
