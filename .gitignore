@@ -1,5 +1,1 @@
-# Ignore files build by xcode
-######################
-DataStructure.xcodeproj/project.xcworkspace/
-DataStructure.xcodeproj/xcuserdata
 *.out

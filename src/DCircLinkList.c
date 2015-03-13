@@ -2,14 +2,14 @@
 //  main.c
 //  DataStructure
 //
-//  Created by Jerry Hsia on 11/05/14.
+//  Created by Jerry Hsia on 11/06/14.
 //  Copyright (c) 2013 Jerry Hsia. All rights reserved.
 //
-/*
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "Public.h"
-#include "CircLinkList.h"
+#include "DCircLinkList.h"
 
 int main(int argc, const char * argv[]) {
     
@@ -26,7 +26,7 @@ int main(int argc, const char * argv[]) {
         c_add(circLinkList, c_length(circLinkList), i);
     }
     c_print(circLinkList);
-
+    
     c_add(circLinkList, 3, 5);
     c_print(circLinkList);
     
@@ -40,4 +40,3 @@ int main(int argc, const char * argv[]) {
     c_print(circLinkList);
     return 0;
 }
-*/
